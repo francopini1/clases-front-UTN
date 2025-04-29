@@ -1,0 +1,6 @@
+° <hero></hero>
+-La etiqueta <hero> no es una etiqueta estándar de HTML. Es probable que sea una etiqueta personalizada (custom element) utilizada en un proyecto específico, posiblemente definida mediante JavaScript con Web Components o simplemente como un marcador semántico.
+
+En diseño web, el término "hero" generalmente se refiere a una sección destacada de una página, como un banner grande o una imagen con texto que aparece en la parte superior de un sitio web. Si <hero> está siendo utilizada en tu proyecto, revisa el código JavaScript o CSS asociado para entender cómo se define y estiliza.
+
+°principio dry 

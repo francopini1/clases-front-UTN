@@ -1,0 +1,47 @@
+
+Rutas Relativas
+Las rutas relativas indican la ubicación de un archivo en relación con el archivo actual (el archivo donde estás escribiendo el código). Estas rutas dependen de la estructura de carpetas de tu proyecto.
+
+1.Ejemplos de rutas relativas:
+En la misma carpeta: Si el archivo contacto.html está en la misma carpeta que index.html:
+<a href="contacto.html">Ir a Contacto</a>
+
+2.En una subcarpeta: Si contacto.html está dentro de una carpeta llamada pages:
+
+<a href="./pages/contacto.html">Ir a Contacto</a>
+
+El prefijo clase3-html significa "desde la carpeta actual".
+Subir un nivel: Si necesitas ir a una carpeta superior (retroceder un nivel), usa ../:
+<a href="../contacto.html">Ir a Contacto</a>
+
+Aquí, ../ sube un nivel en la estructura de carpetas.
+Subir varios niveles: Si necesitas retroceder varios niveles, usa múltiples ../:
+<a href="../../otra-carpeta/contacto.html">Ir a Contacto</a>
+
+
+Rutas Absolutas
+Las rutas absolutas indican la ubicación exacta de un archivo desde la raíz del sistema de archivos o desde el dominio principal (en un servidor web).
+
+Ejemplos de rutas absolutas:
+1.En un servidor web: Si el archivo está en un dominio público:
+
+<a href="https://www.ejemplo.com/pages/contacto.html">Ir a Contacto</a>
+
+2.esde la raíz del proyecto (en algunos servidores): Si el servidor considera la raíz del proyecto como /:
+
+<a href="/pages/contacto.html">Ir a Contacto</a>
+
+Cómo moverte entre carpetas
+
+1.Para ir a una subcarpeta: Usa el nombre de la carpeta seguido de / y el archivo deseado:
+
+<a href="carpeta/archivo.html">Ir al archivo</a>
+
+2.Para retroceder a una carpeta superior: Usa ../ seguido del nombre de la carpeta o archivo:
+
+<a href="../archivo.html">Retroceder</a>
+
+3.Para moverte entre varias carpetas: Combina ../ y nombres de carpetas según sea necesario:
+
+<a href="../otra-carpeta/archivo.html">Ir a otra carpeta</a>
+

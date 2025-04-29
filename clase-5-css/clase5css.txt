@@ -1,0 +1,30 @@
+La metodología BEM (Block, Element, Modifier) es una convención para nombrar clases en CSS que facilita la organización, mantenimiento y reutilización del código. Fue creada por Yandex y se basa en dividir la interfaz en bloques independientes.
+
+Conceptos principales de BEM:
+Block (Bloque): Representa un componente independiente de la interfaz. Es el contenedor principal.
+
+Ejemplo: menu, button, header.
+Element (Elemento): Representa una parte del bloque que no tiene sentido por sí solo y depende del bloque.
+
+Se separa del bloque con dos guiones bajos (__).
+Ejemplo: menu__item, button__icon.
+Modifier (Modificador): Representa una variación o estado del bloque o elemento.
+
+Se separa con dos guiones (--).
+Ejemplo: menu--active, button__icon--large
+
+<div class="menu">
+  <div class="menu__item menu__item--active">Inicio</div>
+  <div class="menu__item">Contacto</div>
+</div>
+Ventajas de BEM:
+Facilita la lectura y comprensión del código.
+Evita conflictos de nombres en CSS.
+Promueve la reutilización de componentes.
+Mejora la escalabilidad en proyectos grandes.
+En tu archivo index.html, podrías aplicar BEM a las clases de los títulos, por ejemplo:
+
+<h1 class="title title--principal">Hola mundo</h1>
+<h1 class="title title--small">Hola mundo</h1>
+
+/*display: none;  es par ocultar un elemento*/

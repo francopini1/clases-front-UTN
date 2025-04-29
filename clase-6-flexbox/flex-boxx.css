@@ -1,0 +1,160 @@
+/*normalized in css*/
+*{
+    box-sizing: border-box; /*colocamos esta clase, siempre es buena ponerla por defecto para que se ajuste todo a los contenedores, */
+    margin: 0;
+    padding: 0; /*eliminar el margen y el padding por defecto de los navegadores*/
+    text-decoration: none; /*eliminar el estilo por defecto de los navegadores*/
+}
+.father{
+width: 100vw; /*100% del viewport, para que tenga el 100% del ancho de la pagina*/
+height: 100vh; /*100% del viewport,para que tenga el 100% del alto de la página*/
+background-color: greenyellow;
+display: flex; /*para que los hijos se coloquen en fila*/
+flex-direction:column ; /*para que los hijos se coloquen en fila*/
+justify-content: right; /*para que los hijos se coloquen en el centro*/
+align-items: end; /*para que los hijos se coloquen en el centro*/
+flex-wrap: wrap; /*para que los hijos se coloquen en varias filas*/
+gap: 20px; /*espacio entre los hijos*/
+
+}
+
+.child{
+    width: 220px;
+    height: 180px;
+    background-color: #8bd4aa;
+    border-radius: 4px;
+    border: 2px solid #000;
+    margin: 2px 0 ;
+}
+
+/*yagni: you arent gonna need it*/
+
+.child:hover{
+    background-color: #29d47e;
+    transition: all 0.5s ease-in-out; /*para que el hover tenga una transicion*/
+    transform: scale(1.1); /*para que el hover tenga un efecto de zoom*/
+    cursor: pointer; /*para que el cursor cambie a pointer cuando pase por encima del hijo*/
+}
+
+
+/*Nuevamente, utiliza (justify-content)
+para ayudar a esas ranas a llegar a sus hojas de lirio.
+Recuerda que esta propiedad CSS alinea elementos horizontalmente y acepta los siguientes valores:
+
+flex-start: Alinea elementos al lado izquierdo del contenedor.
+flex-end: Alinea elementos al lado derecho del contenedor.
+center: Alinea elementos en el centro del contenedor.
+space-between: Muestra elementos con la misma distancia entre ellos.
+space-around: Muestra elementos con la misma separación alrededor de ellos.
+*/
+
+/*
+Flexbox Froggy
+Ahora usa (align-items)
+para ayudar a las ranas a llegar al fondo del estanque.
+Esta propiedad CSS alinea elementos verticalmente y acepta los siguientes valores:
+
+flex-start: Alinea elementos a la parte superior del contenedor.
+flex-end: Alinea elementos a la parte inferior del contenedor.
+center: Alinea elementos en el centro (verticalmente hablando) del contenedor.
+baseline: Muestra elementos en la línea base del contenedor
+stretch: Elementos se estiran para ajustarse al contenedor.*/
+
+
+/*
+Las ranas necesitan ponerse en el mismo orden que sus hojas de lirio usando (flex-direction.)
+Esta propiedad CSS define la dirección de los elementos en el contenedor, y acepta los siguientes valores:
+
+row: Elementos son colocados en la misma dirección del texto.
+row-reverse: Elementos son colocados en la dirección opuesta al texto.
+column: Elementos se colocan de arriba hacia abajo.
+column-reverse: Elementos se colocan de abajo hacia arriba.
+*/
+
+/*
+A veces, invertir el orden de una fila o columna de un contenedor no es suficiente. En esos casos, nosotros podemos aplicar la propiedad order a elementos individuales. Por defecto, los elementos tienen un valor 0, pero nosotros podemos usar esta propiedad para establecerlo a un número entero positivo o negativo.
+
+Usa la propiedad order para reordenar las ranas de acuerdo a sus hojas de lirio.
+
+
+1 pond {
+  display: flex;
+}
+2
+3
+4
+5.yellow {
+  order: 1;
+}
+6
+7
+*/
+/*
+Otra propiedad que puedes aplicar a elementos individuales es align-self. 
+Esta propiedad acepta los mismos valores de align-items y sus valores son usados para un elemento específico.
+
+#pond {
+  display: flex;
+  align-items: flex-start;
+}
+
+.yellow {
+align-self:end;
+}
+*/
+
+/*
+¡Oh, no! Todas las ranas están apretadas en una sola fila de hojas de lirio.
+ Manos a la obra, vamos a distribuirlas correctamente usando la propiedad (flex-wrap), la cual acepta los siguientes valores:
+
+nowrap: Cada elemento se ajusta en una sola línea.
+wrap: los elementos se envuelven alrededor de líneas adicionales.
+wrap-reverse: Los elementos se envuelven alrededor de líneas adicionales en reversa.
+
+*/
+
+/*
+Las dos propiedades flex-direction y flex-wrap son usadas a menudo en conjunto con la propiedad abreviada flex-flow, 
+la cual fue creada para combinarlas. Esta propiedad abreviada, acepta un valor de cada una separada por un espacio.
+
+Por ejemplo, puedes usar flex-flow para establecer filas y envolverlas.
+
+Trata de usar flex-flow para volver a realizar el nivel anterior.
+
+*/
+
+/*
+Las ranas están repartidas por todo el estanque, pero las hojas de lirio están agrupadas en la parte superior. 
+Puedes usar align-content para establecer como múltiples líneas están separadas una de otra. Esta propiedad acepta los siguientes valores:
+
+flex-start: Las líneas se posicionan en la parte superior del contenedor.
+flex-end: Las líneas se posicionan en la parte inferior del contenedor.
+center: Las líneas se posicionan en el centro (verticalmente hablando) del contenedor.
+space-between: Las líneas se muestran con la misma distancia entre ellas.
+space-around: Las líneas se muestran con la misma separación alrededor de ellas.
+stretch: Las líneas se estiran para ajustarse al contenedor.
+Esto puede ser confuso, pero align-content determina el espacio entre las líneas,
+ mientras que align-items determina como los elementos en su conjunto están alineados dentro del contenedor. Cuando hay solo una línea, align-content no tiene efecto.
+
+*/
+
+/*
+Las ranas están repartidas por todo el estanque, pero las hojas de lirio están agrupadas en la parte superior.
+ Puedes usar align-content para establecer como múltiples líneas están separadas una de otra. Esta propiedad acepta los siguientes valores:
+
+flex-start: Las líneas se posicionan en la parte superior del contenedor.
+flex-end: Las líneas se posicionan en la parte inferior del contenedor.
+center: Las líneas se posicionan en el centro (verticalmente hablando) del contenedor.
+space-between: Las líneas se muestran con la misma distancia entre ellas.
+space-around: Las líneas se muestran con la misma separación alrededor de ellas.
+stretch: Las líneas se estiran para ajustarse al contenedor.
+Esto puede ser confuso, pero align-content determina el espacio entre las líneas, mientras que align-items determina como los elementos en su conjunto están alineados dentro del contenedor.
+ Cuando hay solo una línea, align-content no tiene efecto.
+*/
+
+/*
+flex-direction: column-reverse: Ordena las ranas en columna invertida (de abajo hacia arriba).
+align-content: space-between: Distribuye el espacio entre las líneas de ranas (útil con flex-wrap activo).
+justify-content: center: Centra las ranas horizontalmente.
+flex-wrap: wrap-reverse: Hace que los elementos se envuelvan en múltiples líneas invertidas (útil para alinear las ranas en los extremos).
+*/

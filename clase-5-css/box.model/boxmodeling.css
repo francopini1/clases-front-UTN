@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin-bottom: 4px;
+}
+
+.caja1{
+    width: 200px;
+    height:200px;
+    background-color: #4b0082;
+    border-radius: 10px;
+    border: 5px solid #229eb6;
+    padding: 10px;
+    overflow: auto;
+    
+}
+/*si una caja tiene desbordamiento, se le aplica la propiedad overflow:auto;*/
+/* la propiedad box-sizing, se suele utilizar para que si yo agrego un border o un padding o lo que fuera, utilizo esa propiedad para que se aplique a todos los elementos.*/
+
+.pill{
+    border-radius: 15px;
+    font-family: sans-serif;
+    font-size: 12px;
+    padding: 4px 12px;
+    color: #227bca;
+    background-color: #1c65a543;
+}
+
+/* Caja principal */
+.main-box {
+    width: 300px; /* Ancho de la caja principal */
+    height: 300px; /* Alto de la caja principal */
+    background-color: #f0f0f0; /* Color de fondo */
+    border: 2px solid #ccc; /* Borde opcional */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Evita desbordamientos */
+    margin: 20px auto; /* Centrar en la página */
+}
+
+/* Caja de la imagen */
+.image-box {
+    width: 100px; /* Ancho de la caja de la imagen */
+    height: 100px; /* Alto de la caja de la imagen */
+    border-radius: 50%; /* Hace la caja circular */
+    overflow: hidden; /* Evita que la imagen se desborde */
+    border: 3px solid #227bca; /* Borde al 50% */
+}
+
+/* Imagen redonda */
+.image-round {
+    width: 100%; /* Ajusta la imagen al ancho de la caja */
+    height: 100%; /* Ajusta la imagen al alto de la caja */
+    object-fit: cover; /* Recorta la imagen para que no se deforme */
+    border-radius: 50%; /* Hace la imagen redonda */
+}
+
+/*Explicación:
+.main-box:
+
+Es la caja principal que contiene todo.
+Tiene un tamaño definido y un fondo opcional.
+Usa flexbox para centrar el contenido.
+.image-box:
+
+Es la caja que contiene la imagen.
+Tiene un tamaño fijo (100px x 100px) y un borde redondeado al 50% para que sea circular.
+Usa overflow: hidden para evitar que la imagen se desborde.
+.image-round:
+
+La imagen se ajusta al tamaño de la caja usando width: 100% y height: 100%.
+object-fit: cover asegura que la imagen mantenga sus proporciones y llene el espacio circular.
+Resultado esperado:
+Una caja principal centrada con una imagen redonda de 100px de diámetro, con un borde al 50%, y sin desbordamientos.*/

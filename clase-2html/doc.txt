@@ -1,0 +1,7 @@
+SEO master y SEM, estudiar.
+Anidado (Nesting):
+Las etiquetas de cierre pueden anidar otras etiquetas o contenido
+
+<contenadora><ontenida><padre><hijo><nieta></nieta></hijo></padre></ontenida></contenadora>
+
+Identación: (No es una regla, pero es algo recomendado, a esto le decimos buena práctica.)

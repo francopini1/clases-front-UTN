@@ -1,0 +1,16 @@
+*{
+    margin:0;
+    padding: 0; /*eliminar el margen y el padding por defecto de los navegadores*/
+    text-decoration: none; /*eliminar el estilo por defecto de los navegadores*/
+    box-sizing: border-box; /*para que el padding y el border no afecten al tamaño del elemento*/
+}
+
+/*contenedor padre de las tarjetas */
+.section-principal{
+    display: flex; /*para que los hijos se coloquen en fila*/
+    align-items: center;
+    padding: 2rem; /*para que los hijos se coloquen en el centro*/
+    gap: 2rem; /*espacio entre los hijos*/
+ 
+}
+

@@ -1,0 +1,82 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.padre{
+    background-color: greenyellow;
+    height: 100vh;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+}
+.hijo{
+    width: 200px;
+    height: 200px;
+    position: static; /* static es el valor por defecto de position */
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+.hijo-2{
+      background: red;  
+      position: relative; /* relative es el valor por defecto de position */
+        /*
+        Al usar position relative se activan 4 propiedades:
+        top, left, bottom y right
+
+        No es valido usar top bottom a la vez ni tampoco left y right a la vez
+        */
+      position: absolute;
+      top: 0;
+      right: 0;
+      /* El abosolute calcula su 0 0 desde la vista o desde el elemento padre más cercano con position disntinto de static */
+}
+
+header{
+    background: rgb(255, 229, 0);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky; /*se respeta el valor y lugar del elemento, conviene ponerselo al navegador*/
+    z-index: 3;
+}
+
+.buscador-m1{
+    position: relative;/*se lo doy para que no sea stati y el button absolute tenga su 0 0 desde este contenendor*/
+    width: 600px;
+    display: flex;
+    align-items: center;
+   
+}
+
+.buscador-m1 input{
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.200);
+    /*el primer valor 0px es en el eje x , el segundo funciona 2px en el eje y , tercer valor blur(desenfoque) 2px, y luego el cuarto que seria el spread la sombra, y por ultimo el color*/
+}
+
+.buscador-m1 button{
+    position: absolute;
+    right: 0;
+    height: 50%;
+    background-color: transparent;
+    padding:0px 16px;
+    border: none ;
+    background-color: transparent;
+    border-left: 1px solid #8080805f;
+   /*  top: 0; */
+}
+
+/*el z-index sirve para que un elemento sea superior se le ponen por capas */

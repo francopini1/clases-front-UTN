@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: 200vh; /* Añade altura al body para que se pueda hacer scroll */
+    scroll-behavior: smooth; /* Hace que el scroll sea suave */
+}
+
+.position-bar {
+    position: sticky; /* Mantiene la barra fija */
+    top: 0; /* Posiciona la barra en la parte superior */
+    background: linear-gradient(to right, #35424a 0%, #f4f4f4 100%);
+    background-size: 200% auto;
+    padding: 16px;
+    color: white;
+    z-index: 1000; /* Asegura que la barra esté encima de otros elementos */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra para separación */
+}
+
+.position-bar h1 {
+    margin: 0;
+}
+
+.contenido {
+    padding: 20px;
+}
+
+/* Efecto de scroll */
+.position-bar {
+    transition: background-position 0.3s ease;
+}

@@ -1,0 +1,167 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    text-decoration: none;
+   /*  color: var(--neutral--0); */
+}
+
+:root{
+
+    --neutral--0: #fff;
+    --color-primary-400:#7253ee;
+    --color-primary-600:#673de6;
+    --color-primary-700:#5025d1;
+    --color-primary-800:#2f1c6a;
+    --color-primary-900:#261559;
+    --font-family: "DM Sans", sans-serif;
+}
+
+html{
+    font-size: 16px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    background-color: white;
+    box-shadow: 0 0 5px #000000b5;
+    position: sticky;
+    top: 0px;
+    align-items: center;
+    padding: 0px 24px;
+}
+
+header > .header-left-content{ /*poniendo la > estas llamando a los hijos directos o indirectos*/
+    display: flex;
+}
+
+.btn-menu{
+    display: none;
+}
+
+/*                     Section de migraciones web                                 */
+
+/*contenedor de toda la sección*/
+.section-sitiosweb{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    background: var(--color-primary-900);
+}
+
+/*contiene las cards y el boton*/
+.section-sitiosweb__container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    justify-content: center; /*Se utiliza para el eje Horizontal (x)*/
+}
+
+/*contiene al titulo y el parrafo de la cabezera*/
+.sitios-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /*Se utiliza para el eje Vertical (y)*/
+    padding: 0 40px;
+    margin-bottom:48px ;
+}
+
+/* titulos de las cards*/
+.sitios-card__title{
+    font-size: 18px;
+    font-weight: 400;
+    font-weight: 700;
+    line-height: 24px;
+    color: #fff;
+    
+}
+
+/*contiene el titulo de la cabezera*/
+.sitios-header__title{
+    font-size: 36px;
+    line-height: 40px;  
+    text-align: center;
+    color: #fff;
+}
+
+.sitios-header__parraf {
+    margin: 24px 0px 0px;
+    font-size: 16px;
+    text-align: center; /**/   
+    color: #fff;
+}
+
+.sitios-card__parraf{
+    color: #fff;
+}
+
+/*text-medium: Esta clase parece ser más genérica y reutilizable para definir un tamaño de texto "medio". 
+Aquí puedes establecer propiedades relacionadas con la tipografía.
+Ejemplo:*/
+.text-medium{
+    font-size: 16px;  
+}
+
+
+
+/*contiene a las 3 cards*/
+.sitios-container-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap : 16px;
+    text-align: left;
+}
+
+/*contiene a cada card*/
+.sitios-card{
+    display: flex;
+    flex-direction: column;
+    background: var(--color-primary-800);
+    width: 360px;
+    padding: 32px;
+    gap: 18px;
+    border-radius: 16px;
+}
+
+/*contiene el icono de cada card*/
+.sitios-card__icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center; /*Se utiliza para el eje Horizontal (x)*/
+    align-items: center; /*Se utiliza para el eje Vertical (y)*/
+    color: var(--neutral--0);
+    background: var(--color-primary-600);
+    border-radius: 8px;
+    gap: 16px;
+    font-size: 20px;   
+}
+
+
+.container-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.btn-sitiosweb{
+    background-color: #673de6;
+    color: #fff;
+    padding: 12px 48px;
+    border-radius: 6px;
+    cursor: pointer;
+    border:2px solid #673de6;
+    line-height: 1;
+    font-size: 16px;
+}

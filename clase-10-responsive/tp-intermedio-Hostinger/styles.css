@@ -1,0 +1,116 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   /*  font-weight: 700; */
+    color: var(--color-primary);
+    --font-size:16px;
+    cursor: pointer;
+    
+}
+
+:root{
+    font-family: var(--font-family);
+    --font-size:16px;
+    --color-primary:#1d1e20;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 0 5px #000000b5;
+    position: sticky;
+}
+
+
+.first-content-nav{
+    align-items: flex-start;
+    display: flex;
+    max-width: 100%;
+    position: relative;
+    width: 100vw;
+    z-index: 1010;
+}
+
+.hostinger-logo{
+    padding: 29px 0 29px 40px;
+    align-items: center;
+    display: flex;
+}
+
+.container-content-nav{
+    width: 100%; 
+    display: flex;
+    padding: 20px 40px;
+    max-height: 88px ;
+    min-height: 88px;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+
+.nav-left ul{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+    font-size: 1rem;
+}
+
+.nav-right {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap:32px;
+    cursor: pointer;
+}
+
+.logo-bandera{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border: none;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.logo-bandera-texto{
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.bandera{
+    width: 32px;
+    height: 20px;
+    align-items: center;
+}
+
+.boton-ingreso{
+    background: transparent;
+    font-weight: 700;
+    border: 2px solid var(--color-primary);
+    padding: 12px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+
+/*flex-grow es una propiedad en CSS utilizada en el contexto de Flexbox, un modelo de layout que permite distribuir el espacio entre los elementos de una manera más eficiente y adaptable.*/
+/*
+Qué hace flex-grow: 1?
+flex-grow define cómo se distribuirá el espacio disponible entre los elementos flexibles dentro de un contenedor flex. Es decir, controla si un elemento puede crecer para ocupar espacio sobrante en el contenedor.
+
+Si flex-grow está establecido en 1, el elemento puede crecer para llenar el espacio disponible en el contenedor. Por ejemplo:
+
+Si hay múltiples elementos en un contenedor flex y todos tienen flex-grow: 1, el espacio disponible se dividirá de manera equitativa entre ellos.
+Si un elemento tiene flex-grow: 2 y otro tiene flex-grow: 1, el primer elemento ocupará el doble de espacio que el segundo.
+Ejemplo simple
+*/

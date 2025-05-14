@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.padre{
+    background-color: greenyellow;
+    height: 100vh;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.hijo{
+    width: 200px;
+    height: 200px;
+    position: static; /* static es el valor por defecto de position */
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+.hijo-2{
+      background: red;  
+      position: relative; /* relative es el valor por defecto de position */
+        /*
+        Al usar position relative se activan 4 propiedades:
+        top, left, bottom y right
+
+        No es valido usar top bottom a la vez ni tampoco left y right a la vez
+        */
+      
+}
+
